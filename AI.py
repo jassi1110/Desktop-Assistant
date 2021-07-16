@@ -75,8 +75,8 @@ def sendemail(to , content):
     server.starttls()
     with open("pass.txt" , "r") as f:
         p = f.read()
-    server.login('jasnoorsingh11@gmail.com' , p)
-    server.sendmail('jasnoorsingh11@gmail.com' , to , content)
+    server.login('<your email ID>' , p)
+    server.sendmail('<Your Email Id>' , to , content)
     server.close()
 
 
